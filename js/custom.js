@@ -44,10 +44,10 @@ $(document).ready(function(){
 
 	var slideHeight = $(window).height();
 	
-	$('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
+	$('#slider, #slider2, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
 
 	$(window).resize(function(){'use strict',
-		$('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
+		$('#slider, #slider2, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
 	});
 	
 	

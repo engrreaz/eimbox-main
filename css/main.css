@@ -515,6 +515,16 @@ top: -8px;
 	color: #fff;
 }
 
+#facts2 {
+	background-image: url("img/testimo.png");
+	background-color: rgba(6,32,51,.8);
+	background-attachment: fixed !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+}
+
 .parallax-overlay {
 	background-color: rgba(6,32,51,.8);
 	padding: 70px 0;
