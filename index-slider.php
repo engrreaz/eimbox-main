@@ -53,7 +53,7 @@
           </div>
           
           <h3 data-wow-duration="500ms" class="wow slideInLeft animated">
-            <span class="color">digitize</span> your institute
+            <span class="color">paperless</span> your institute
           </h3>
           <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">
             <span> EIMBox</span>!

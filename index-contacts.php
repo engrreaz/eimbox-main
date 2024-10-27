@@ -17,7 +17,7 @@
         <!-- contact address -->
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
           <div class="contact-address">
-            <h3></h3>
+            <p><b>Head Office</b></p>
             <p>15/B Mirpur Road</p>
             <p>(Opposite NAEM & Dhaka College)</p>
             <p>Dhaka - 1205</p>
@@ -29,22 +29,22 @@
         <!-- contact form -->
         <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms"
           data-wow-delay="300ms">
-          <div class="contact-form">
+          <div class="contact-form" id="cont">
             <h3>Say hello!</h3>
             <form action="#" id="contact-form">
               <div class="input-group name-email">
                 <div class="input-field">
-                  <input type="text" name="name" id="name" placeholder="Name" class="form-control" />
+                  <input type="text" name="name2" id="name2" placeholder="Name" class="form-control" />
                 </div>
                 <div class="input-field">
-                  <input type="email" name="email" id="email" placeholder="Email" class="form-control" />
+                  <input type="email" name="email2" id="email2" placeholder="Email" class="form-control" />
                 </div>
               </div>
               <div class="input-group">
-                <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+                <textarea name="message2" id="message2" placeholder="Message" class="form-control"></textarea>
               </div>
               <div class="input-group">
-                <input type="submit" id="form-submit" class="pull-right" value="Send message" />
+                <input type="submit" id="form-submit" onclick="query();" class="pull-right" value="Send message" />
               </div>
             </form>
           </div>

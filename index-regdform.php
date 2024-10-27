@@ -34,21 +34,21 @@
         data-wow-delay="300ms">
         <div class="contact-form">
           <h5></h5>
-           <form action="#" id="contact-form">
+
             <div class="row">
-              <div class="col-12">
+              <div class="col-12" id="regd-form">
                 <div class="col-md-7 d-block">
                   <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" />
-                  <input type="text" name="name" id="name" placeholder="Designation" class="form-control" />
-                  <input type="text" name="name" id="name" placeholder="Institution Name" class="form-control" />
+                  <input type="text" name="rank" id="rank" placeholder="Designation" class="form-control" />
+                  <input type="text" name="scname" id="scname" placeholder="Institution Name" class="form-control" />
 
                 </div>
 
                 <div class="col-md-5">
 
-                  <input type="text" name="name" id="name" placeholder="EIIN" class="form-control" />
-                  <input type="tel" name="name" id="name" placeholder="Mobile No." class="form-control" />
-                  <input type="email" name="name" id="name" placeholder="Email Address" class="form-control" />
+                  <input type="text" name="sccode" id="sccode" placeholder="EIIN" class="form-control" />
+                  <input type="tel" name="mno" id="mno" placeholder="Mobile No." class="form-control" />
+                  <input type="email" name="email" id="email" placeholder="Email Address" class="form-control" />
 
 
                 </div>
@@ -58,14 +58,11 @@
             </div>
             <div class="row">
               <div class="input-group">
-                <input type="submit" id="form-submit" class="pull-right" value="Send Request" />
+                <input type="submit" id="form-submit" class="pull-right" onclick="regd();" value="Send Request" />
               </div>
             </div>
 
 
-
-
-          </form>
         </div>
       </div>
       <!-- end contact form -->

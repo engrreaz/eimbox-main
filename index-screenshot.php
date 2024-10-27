@@ -38,41 +38,27 @@
   </div>
 
   <div class="project-wrapper">
-    <figure class="mix work-item student">
-      <img src="img/sshots/1.png" alt="" />
-      <figcaption class="overlay">
-        <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/sshots/1.png"><i
-            class="fa fa-eye fa-lg"></i></a>
-        <h4>Student Enrollment</h4>
-        <p>Student Module</p>
-      </figcaption>
-    </figure>
-    <figure class="mix work-item branding">
-      <img src="img/sshots/1.png" alt="" />
-      <figcaption class="overlay">
-        <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/sshots/1.png"><i
-            class="fa fa-eye fa-lg"></i></a>
-        <h4>Student Enrollment</h4>
-        <p>Student Module</p>
-      </figcaption>
-    </figure>
-    <figure class="mix work-item result">
-      <img src="img/sshots/3.png" alt="" />
-      <figcaption class="overlay">
-        <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/sshots/1.png"><i
-            class="fa fa-eye fa-lg"></i></a>
-        <h4>Student Enrollment</h4>
-        <p>Student Module</p>
-      </figcaption>
-    </figure>
-    <figure class="mix work-item payment">
-      <img src="img/sshots/2.png" alt="" />
-      <figcaption class="overlay">
-        <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/sshots/1.png"><i
-            class="fa fa-eye fa-lg"></i></a>
-        <h4>Student Enrollment</h4>
-        <p>Student Module</p>
-      </figcaption>
-    </figure>
+
+
+    <?php
+    for ($i = 1; $i < 9; $i++) {
+      ?>
+
+      <figure class="mix work-item student">
+        <img src="img/sshots/<?php echo $i;?>.png" alt="" />
+        <figcaption class="overlay">
+          <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/sshots/<?php echo $i;?>.png"><i
+              class="fa fa-eye fa-lg"></i></a>
+          <h4>Student Enrollment</h4>
+          <p>Student Module</p>
+        </figcaption>
+      </figure>
+
+
+    <?php
+    }
+    ?>
+
+
   </div>
 </section>

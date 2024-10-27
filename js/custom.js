@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 	var slideHeight = $(window).height();
 	
-	$('#slider, #slider2, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
+	$('#slider, #slider2, #facts2, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
 
 	$(window).resize(function(){'use strict',
 		$('#slider, #slider2, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
@@ -119,7 +119,7 @@ $(document).ready(function(){
 
 // ==========  START GOOGLE MAP ========== //
 function initialize() {
-    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+    var myLatLng = new google.maps.LatLng(23.737382664028207, 90.3847770533916);
 
     var mapOptions = {
         zoom: 14,

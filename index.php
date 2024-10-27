@@ -1,3 +1,9 @@
+<?php
+include 'inc.php';
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 
@@ -27,6 +33,7 @@
   <div id="preloader">
     <img src="img/preloader.gif" alt="Preloader" />
   </div>
+
 
   <header id="navigation" class="navbar-fixed-top navbar">
     <div class="container">
@@ -68,19 +75,23 @@
   <!--
         Home Slider
         ==================================== -->
-<?php 
-// slider, features, sshots, testimonial, team, regd, facts, contacts
-include 'index-slider.php';
-include 'index-features.php';
-include 'index-screenshot.php';
-include 'index-testimonial.php';
-// include 'index-team.php';
-// include 'index-facts.php';
-include 'index-regdform.php';
-include 'index-contacts.php';
-include 'index-footer.php';
 
-?>
+
+  <?php
+  // slider, features, sshots, testimonial, team, regd, facts, contacts
+  include 'index-slider.php';
+  include 'index-features.php';
+  include 'index-screenshot.php';
+  include 'index-testimonial.php';
+  // include 'index-team.php';
+// include 'index-facts.php';
+  include 'index-regdform.php';
+  include 'index-contacts.php';
+  include 'index-footer.php';
+
+  ?>
+
+  https://eimbox.com/php.php?user_name=bahs103187
 
 
   <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
@@ -167,6 +178,65 @@ include 'index-footer.php';
         },
       });
     });
+  </script>
+
+
+
+
+  <script>
+    function regd() {
+      var a = document.getElementById("name").value;
+      var b = document.getElementById("rank").value;
+      var c = document.getElementById("scname").value;
+      var d = document.getElementById("sccode").value;
+      var e = document.getElementById("mno").value;
+      var f = document.getElementById("email").value;
+
+      var infor = "name=" + a + '&rank=' + b + '&scname=' + c + '&sccode=' + d + '&mno=' + e + '&email=' + f + "&tail=1";
+      // alert(infor);
+      $("#regd-form").html("");
+
+      $.ajax({
+        type: "POST",
+        url: "save-regd-form.php",
+        data: infor,
+        cache: false,
+        beforeSend: function () {
+          $('#regd-form').html('<span class=""><center>Saving....</center></span>');
+        },
+        success: function (html) {
+          $("#regd-form").html(html);
+
+        }
+      });
+    }
+  </script>
+
+
+<script>
+    function query() {
+      var a = document.getElementById("name2").value;
+      var c = document.getElementById("message2").value;
+      var b = document.getElementById("email2").value;
+
+      var infor = "name=" + a + '&email=' + b + '&msg=' + c  + "&tail=2";
+      // alert(infor);
+      $("#cont").html("");
+
+      $.ajax({
+        type: "POST",
+        url: "save-regd-form.php",
+        data: infor,
+        cache: false,
+        beforeSend: function () {
+          $('#cont').html('<span class=""><center>Saving....</center></span>');
+        },
+        success: function (html) {
+          $("#cont").html(html);
+
+        }
+      });
+    }
   </script>
 </body>
 
